@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section1{
+    min-height: 100vh;
+}
+.star1{
+    position: absolute;
+    top: 50px;
+    right: 135px;
+    width: 42px;
+    height: auto;
+   
+}
+.main{
+    position: fixed;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 16px;
+    
+}
+.div1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 80px;
+}
+.div1 .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    list-style-type: none;
+}
+.div1 .nav ul .home{
+    color: red;
+}
+
+.div1 .nav ul li:hover {
+    scale: 1.1;
+    cursor: pointer;
+    color: #FF0000;
+}
+.div2{
+    background: black;
+    color: whitesmoke;
+    padding: 8px 15px 8px 20px;
+    font-weight: 100;
+   font-size: 13px;
+}
+.div2:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.main-page-content {
+    padding-top: 120px;
+    margin-top: 50px;
+   display: flex;
+   /* justify-content: space-around; */
+}
+.background1{
+    position: absolute;
+    z-index: -20;
+    top: 20px;
+    left: 250px;
+    width: 350px;
+}
+.main-page-content .content {
+    width: 40%;
+    padding: 10px 0px 10px 150px;
+
+}
+.title1{
+    z-index: 3;
+    /* place-content: center; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+.description1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #606060;
+
+}
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.get-started-text {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    gap: 10px;
+}
+.get-started-text:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+.get-started-text img{
+    width: 20px;
+    height: auto;
+   
+}
+.watch-video {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.watch-video:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.a-z{
+    margin-top: 35px;
+
+}
+.a-z .star8 {
+    position: absolute;
+    top: 380px;
+    left: 280px;
+}
+.a-z .az-photo{
+    position: absolute;
+    top: 400px;
+    left: 160px;
+    width: 450px;
+    height: auto;
+}
+.main-page-content .iphone-photos {
+    width: 40%;
+    
+}
+
+
+.iphone-cards-stack {
+    position: relative;
+    width: max-content;
+
+}
+.iphone-card{
+    position: absolute;
+    transition: transform 0.3s ease;
+    width: 450px;
+    height: auto;
+}
+.iphone-card:nth-child(1) {
+    top: -100px;
+    left: 200px ;
+    z-index: 6;
+}
+.iphone-card:nth-child(2) {
+    top: -25px;
+    left: 275px;
+    z-index: 5;
+}
+.iphone-card:nth-child(3) {
+    top: 50px;
+    left: 350px;
+    z-index: 4;
+}
+.iphone-card:nth-child(4){
+    top: -80px;
+    left: 220px;
+    z-index: 3;
+    width: 500px;
+}
+.iphone-card:nth-child(5) {
+    top: 200px;
+    left: 250px;
+    rotate: 50deg;
+    z-index: 2;
+}
+
+@media (max-width: 450px) {
+
+    .section1{
+        min-height: 200vh;
+    }
+    .div1{
+        display: flex;
+        
+    }
+    .navbar{
+        justify-content: start;
+        gap: 10px;
+    }
+    .nav ul{
+        display: flex;
+        align-items: start;
+        gap: 5px;
+    }
+    .main-page-content{
+        display: block;
+
+    }
+    .content{
+      
+        height: auto;
+    }
+    .az-photo{
+        position: relative;
+        top: 100px;
+        left: 160px;
+        width: 450px;
+        height: auto;
+    }
+}
+
+
+/* section2  */
+/* section2  */
+
+.section2 {
+    min-height: 100vh;
+}
+.section2-div{
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+   justify-content: space-around;
+    
+}
+.section2 .iphone-photos2{
+    width: 30%;
+    position: relative;
+    width: max-content;
+    margin-left: -350px;
+}
+.feautures{
+    width: 55%;
+    padding-left: 350px;
+    margin-top: 20px;
+}
+.section2-imgs{
+    position: absolute;
+    transition: transform 0.3s ease;
+
+}
+.section2-imgs:nth-child(1) {
+    top: -280px;
+    left: 120px;
+    z-index: 2;
+    width: 550px;
+}
+.section2-imgs:nth-child(2){
+    top: -220px;
+    left: 270px;
+    z-index: 3;
+    width: 350px;
+    height: auto;
+}
+.section2-imgs:nth-child(3) {
+    top: -350px;
+    left: 120px;
+    z-index: 1;
+    scale: 0.8;
+}
+
+.heading {
+    color: red;
+    font-family: monospace;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.feautures h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+.feautures ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 15px;
+    list-style-type: none;
+}
+.feautures ul li{
+    margin-bottom: 25px;
+}
+.feautures ul li div{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    gap: 10px;
+    letter-spacing: 0.5px; 
+}
+.feautures ul li p, .advantages ul li p{
+    color: #696969;
+    font-family: monospace;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* section3 */
+/* section3 */ 
+
+.section3{
+    min-height: 100vh;
+}
+.section3-div{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.advantages {
+    width: 35%;
+    
+}
+.advantages h1 {
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+.advantages ul{
+    list-style-type: none;
+}
+
+.advantages ul li div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.advantages ul li div img {
+    width: 26px;
+    height: auto;
+}
+.iphone-photo3 {
+    position: relative;
+    width: max-content;
+}
+.card{
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+.card:nth-child(1) {
+    top: -150px;
+    right: -80px;
+    width: 550px;
+    height: auto;
+    z-index: 2;
+}
+.card:nth-child(2) {
+    z-index: 3;
+    width: 350px;
+    top: -100px;
+    right: -35px;
+}
+.card:nth-child(3) {
+    z-index: 1;
+    top: -100px;
+    right: -30px;
+}
+
+
